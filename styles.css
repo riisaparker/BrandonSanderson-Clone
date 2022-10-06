@@ -18,8 +18,10 @@
 	--black: #040c16;
 	--blue: #1f2c3e;
 	--lightBlue: #317ba4;
+	--darkBlue: #1a2535;
 	--grey: #dfdedc;
 	--red: #983338;
+
 }
 
 
@@ -40,16 +42,22 @@ button{
 h2{
 	font-style: var(--fontHeader);
 	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: -2px;
+	margin-bottom: 5%;
 }
 
 h3{
 	font-style: var(--fontSubHead);
-	font-size: 24px;
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 5%;
 }
 
 p{
 	font-style: var(--fontText);
-	font-size: 18px;
+	font-size: 14px;
+	margin-bottom: 0.25rem;
 }
 
 hr{
@@ -62,18 +70,6 @@ hr{
 
 
 /* ------------------- CLASSES ----------------------- */
-
-.container{
-	display: flex;
-	flex-direction: row;
-	max-width: 100vw;
-	min-height: 50vh;
-	padding-top: 1% ;
-	padding-bottom: 1%;
-	padding-left: 0;
-	justify-content: space-between;
-
-}
 
 
 
@@ -90,9 +86,19 @@ hr{
 	width: 100vw;
 }
 
+.sec-miniHero{
+
+}
+
 
 
 /* ------- NAV BAR -------- */
+
+
+.navbar{
+	background-color: var(--black) ;
+}
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -160,11 +166,109 @@ hr{
 }
 
 
-/* ------- DIVS -------- */
+/* ------- FLEXBOXES -------- */
 
-.div-mini-hero{
-	
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	max-width: 100vw;
+	min-height: 60vh;
+	padding-top: 1% ;
+	padding-bottom: 1%;
+	padding-left: 0;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
+
+
+.flexItem-mini-hero{
+	flex-basis: 32vw;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+/* ------- MINI-HERO -------- */
+
+
+.mini-hero-post{
+	margin: 7% 5% ;
+	margin-right: 15%;
+}
+
+
+#mini-hero-1 h2, #mini-hero-3 h2{
+	color: var(--gold) ;
+}
+
+#mini-hero-1 h3{
+	color: var(--grey);
+}
+
+#mini-hero-2 h2{
+	color: var(--black);
+}
+
+#mini-hero-2 h3{
+	color: var(--white);
+}
+
+
+.btn-white{
+	background-color: var(--white);
+	border-style: none;
+	border-radius: 25px;
+	color: var(--lightBlue);
+	font-weight: 700;
+	padding: 4% 4%;
+	margin-top: 2%;
+}
+
+.mini-hero-progress{
+	margin: 7% 5% ;
+	margin-right: 5%;
+}
+
+.mini-hero-progress-case{
+	color: var(--grey);
+}
+
+
+.mini-hero-progress-boxes{
+	display: inline-block;
+	width: 100%;
+}
+
+.mini-hero-progress-bar{
+	display: inline-block;
+	min-width: 85%;
+	min-height: 7px;
+	margin-right: 3%;
+}
+
+.mini-hero-progress-perc{
+	display: inline-block;
+}
+
+
+#id-progress-1{
+	background: linear-gradient(to right, var(--gold) 100%, var(--gold) 100%, var(--darkBlue) 50%);
+}
+#id-progress-2{
+	background: linear-gradient(to right, var(--gold) 100%, var(--gold) 100%, var(--darkBlue) 50%);
+}
+
+#id-progress-3{
+	background: linear-gradient(to right, var(--gold) 16%, var(--gold) 16%, var(--darkBlue) 16%);
+}
+
+#id-progress-4{
+	background: linear-gradient(to right, var(--gold) 10%, var(--gold) 10%, var(--darkBlue) 10%);
+}
+
 
 
 /* ------------------- IDs ----------------------- */
@@ -189,8 +293,10 @@ hr{
 #btn-newsletter{
 	background-color: var(--gold);
 	border-style: none;
-	border-radius: 14px;
+	border-radius: 25px;
 	color: var(--white);
+	font-size: 18px;
+	padding: 1% 1%;
 }
 
 
@@ -220,15 +326,15 @@ hr{
 /* Mini Heroes */
 
 #mini-hero-1{
-	background-color: red;
+	background-color: var(--blue);
 }
 
 #mini-hero-2{
-	background-color: green;
+	background-color: var(--gold);
 }
 
 #mini-hero-3{
-	background-color: yellow;
+	background-color: var(--blue);
 }
 
 
