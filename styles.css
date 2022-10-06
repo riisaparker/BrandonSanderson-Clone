@@ -86,6 +86,11 @@ hr{
 	width: 100vw;
 }
 
+.sec-hero:hover{
+	opacity: 0.75;
+}
+
+
 .sec-miniHero{
 
 }
@@ -178,7 +183,6 @@ hr{
 	padding-bottom: 1%;
 	padding-left: 0;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 
 
@@ -186,17 +190,20 @@ hr{
 	flex-basis: 32vw;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	position: relative;
 }
+
 
 
 
 
 /* ------- MINI-HERO -------- */
 
-
 .mini-hero-post{
-	margin: 7% 5% ;
-	margin-right: 15%;
+	margin: 0 0 0 5%;
+  	position: absolute;
+  	top: 50%;
+  	transform: translate(0, -50%);
 }
 
 
@@ -251,6 +258,7 @@ hr{
 
 .mini-hero-progress-perc{
 	display: inline-block;
+	color: var(--gold);
 }
 
 
@@ -268,7 +276,6 @@ hr{
 #id-progress-4{
 	background: linear-gradient(to right, var(--gold) 10%, var(--gold) 10%, var(--darkBlue) 10%);
 }
-
 
 
 /* ------------------- IDs ----------------------- */
@@ -341,7 +348,20 @@ hr{
 
 
 
+/* MEDIA QUERIES */
 
+@media all and ( max-width: 770px ){
+	.flex-container{
+		flex-direction: column-reverse;
+	}
+	.flexItem-mini-hero{
+		flex-basis: :20vw;
+		min-height: 50vh;
+	}
+	.btn-white{
+		padding: 2% 2%;
+	}
+}
 
 
 
