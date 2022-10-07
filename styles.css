@@ -20,7 +20,9 @@
 	--lightBlue: #317ba4;
 	--darkBlue: #1a2535;
 	--grey: #dfdedc;
+	--darkGrey: #82838a;
 	--red: #983338;
+	--brightRed: #b63636;
 
 }
 
@@ -95,15 +97,18 @@ hr{
 	background-color: var(--white);
 }
 
+.sec-callToAction{
+	background-color: var(--blue);
+	min-height: 50vh;
+	margin-top: 6%;
+}
+
 
 
 /* ------- NAV BAR -------- */
-
-
 .navbar{
 	background-color: var(--black) ;
 }
-
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -172,7 +177,6 @@ hr{
 
 
 /* ------- FLEXBOXES -------- */
-
 
 .flex-container{
 	display: flex;
@@ -280,7 +284,6 @@ hr{
 
 /* ------- BLOG -------- */
 
-
 .sec-blog h2{
 	padding-top: 1% ;
 	margin-bottom: 0.5%;
@@ -290,12 +293,10 @@ hr{
 	font-size: 30px;
 }
 
-
 .sec-blog hr{
 	border: 1.0px solid var(--black);
 	opacity: 1;
 }
-
 
 .flex-container-blog{
 	display: flex;
@@ -309,7 +310,6 @@ hr{
 	border-bottom: 1.0px solid var(--black) ;
 }
 
-
 .flexItem-blog-image{
 	min-width: 35%;
 	max-width: 35%;
@@ -318,7 +318,6 @@ hr{
 .flexItem-blog-image img{
 	max-width: 100%;
 }
-
 
 .flexItem-blog-body{
 	max-height: 100%;
@@ -363,6 +362,46 @@ hr{
 	text-align: center;
 }
 
+
+/* -------  CALL TO ACTION -------- */
+
+.sec-callToAction h3{
+	color: var(--brightRed);
+	font-weight: 700;
+	font-size: 25px;
+	letter-spacing: 0.5px;
+	margin-bottom: 2%;
+}
+
+.callToAction-div{
+	padding: 2% 1% 1% 2%;
+}
+
+input{
+	width: 43%;
+	margin-right: 5%;
+	margin-bottom: 3%;
+	background: none;
+	color: var(--grey);
+	border-style: none;
+	font-size: 16px;
+}
+
+.callToAction-div p{
+	color: var(--darkGrey);
+}
+
+
+#btn-submit{
+	background-color: var(--red);
+	font-size: 14px;
+	border-radius: 10px;
+	padding: 0.5% 1%;
+	color: var(--white);
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+}
 
 
 /* ------------------- IDs ----------------------- */
