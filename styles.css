@@ -105,7 +105,6 @@ hr{
 
 .sec-footer{
 	height: 17vh;
-
 }
 
 
@@ -176,14 +175,6 @@ hr{
 	color: var(--gold);
 	border-bottom: 2px solid var(--gold);
 	margin-bottom: 1px;
-}
-
-/* Change the padding of the navlink when the menu is a burger */
-@media all and (max-width:  990px){
-	.nav-link{
-		padding-top: 8px;
-		padding-bottom: 8px;
-	}
 }
 
 
@@ -464,18 +455,7 @@ input{
 	text-decoration: underline;
 }
 
-/* Changes for blog posts */
-@media all and (max-width:  770px){
-	.flex-container-footer{
-		flex-direction: column;
-	}
-	.flexItem-footer{
-		max-width: 100%;
-	}
-	p, #footer-links{
-		text-align: center;
-	}
-}
+
 
 
 
@@ -488,15 +468,6 @@ input{
 #fig-logo{
 	max-width: 60vh;
 	margin: auto;
-}
-
-@media all and (max-width: 500px){
-	.sec-header{
-		height: 20vh;
-	}
-	#fig-logo{
-		max-width: 50vh;
-	}
 }
 
 
@@ -522,20 +493,8 @@ input{
 	margin: auto;
 }
 
-/* Swap the hero from small to large */
-@media all and (max-width: 770px){
-	#fig-hero-large{
-		display: none;
-	}
-	#fig-hero-small{
-		max-width: 70vw;
-		display: block;
-	}
-}
-
 
 /* Mini Heroes */
-
 #mini-hero-1{
 	background-color: var(--blue);
 }
@@ -554,9 +513,40 @@ input{
 
 /*------------ MEDIA QUERIES ------------- */
 
-/* Changes for mini hero */
 
-@media all and ( max-width: 770px ){
+@media all and ( max-width:  350px){
+	.flexItem-mini-hero{
+		min-height: 70vh;
+	}
+}
+
+
+
+@media all and (max-width: 500px){
+	.sec-header{
+		height: 20vh;
+	}
+	#fig-logo{
+		max-width: 50vh;
+	}
+}
+
+
+
+
+
+@media all and (max-width: 770px){
+
+	/* Swap the hero from small to large */
+	#fig-hero-large{
+		display: none;
+	}
+	#fig-hero-small{
+		max-width: 70vw;
+		display: block;
+	}
+
+	/* Changes for mini hero */
 	.flex-container{
 		flex-direction: column-reverse;
 	}
@@ -567,27 +557,34 @@ input{
 	.btn-white{
 		padding: 2% 2%;
 	}
-}
 
-@media all and ( max-width:  350px){
-	.flexItem-mini-hero{
-		min-height: 70vh;
-	}
-}
-
-
-
-/* Changes for blog posts */
-@media all and (max-width:  770px){
+	/* Changes for blog posts */
 	.flex-container-blog{
 		flex-direction: column;
 	}
 	.flexItem-blog-image{
 		max-width: 100%;
 	}
+	.flex-container-footer{
+		flex-direction: column;
+	}
+	.flexItem-footer{
+		max-width: 100%;
+	}
+	p, #footer-links{
+		text-align: center;
+	}
 }
 
 
+
+/* Change the padding of the navlink when the menu is a burger */
+@media all and (max-width:  990px){
+	.nav-link{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}
 
 
 
