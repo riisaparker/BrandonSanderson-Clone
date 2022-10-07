@@ -297,7 +297,7 @@ hr{
 }
 
 
-.flex-container-columns{
+.flex-container-blog{
 	display: flex;
 	flex-direction: row;
 	max-width: 100vw;
@@ -306,17 +306,18 @@ hr{
 	padding-bottom: 1%;
 	padding-left: 0;
 	justify-content: space-between;
+	border-bottom: 1.0px solid var(--black) ;
 }
 
 
 .flexItem-blog-image{
 	min-width: 35%;
+	max-width: 35%;
 }
 
 .flexItem-blog-image img{
 	max-width: 100%;
 }
-
 
 
 .flexItem-blog-body{
@@ -347,6 +348,20 @@ hr{
 	font-size: 18px;
 }
 
+
+#btn-loadMore{
+	border: 2px solid var(--grey);
+	border-radius: 0%;
+	color: var(--black);
+	padding: 1% 1%;
+	margin-bottom: 2%;
+	width: 15%;
+	font-size: 14px;
+}
+
+#div-loadMore{
+	text-align: center;
+}
 
 
 
@@ -420,7 +435,9 @@ hr{
 
 
 
-/* MEDIA QUERIES */
+/*------------ MEDIA QUERIES ------------- */
+
+/* Changes for mini hero */
 
 @media all and ( max-width: 770px ){
 	.flex-container{
@@ -435,7 +452,6 @@ hr{
 	}
 }
 
-
 @media all and ( max-width:  350px){
 	.flexItem-mini-hero{
 		min-height: 70vh;
@@ -444,6 +460,15 @@ hr{
 
 
 
+/* Changes for blog posts */
+@media all and (max-width:  770px){
+	.flex-container-blog{
+		flex-direction: column;
+	}
+	.flexItem-blog-image{
+		max-width: 100%;
+	}
+}
 
 
 
