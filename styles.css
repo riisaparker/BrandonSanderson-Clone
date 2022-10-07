@@ -170,6 +170,7 @@ hr{
 .nav-link:hover{
 	color: var(--gold);
 	border-bottom: 2px solid var(--gold);
+	margin-bottom: 1px;
 }
 
 /* Change the padding of the navlink when the menu is a burger */
