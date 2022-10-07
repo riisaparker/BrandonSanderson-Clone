@@ -91,8 +91,8 @@ hr{
 }
 
 
-.sec-miniHero{
-
+.sec-blog{
+	background-color: var(--white);
 }
 
 
@@ -196,7 +196,6 @@ hr{
 
 
 
-
 /* ------- MINI-HERO -------- */
 
 .mini-hero-post{
@@ -276,6 +275,79 @@ hr{
 #id-progress-4{
 	background: linear-gradient(to right, var(--gold) 10%, var(--gold) 10%, var(--darkBlue) 10%);
 }
+
+
+
+/* ------- BLOG -------- */
+
+
+.sec-blog h2{
+	padding-top: 1% ;
+	margin-bottom: 0.5%;
+	margin-left: 2%;
+	color: var(--black);
+	letter-spacing: 0.5px;
+	font-size: 30px;
+}
+
+
+.sec-blog hr{
+	border: 1.0px solid var(--black);
+	opacity: 1;
+}
+
+
+.flex-container-columns{
+	display: flex;
+	flex-direction: row;
+	max-width: 100vw;
+	min-height: 40vh;
+	padding-top: 2% ;
+	padding-bottom: 1%;
+	padding-left: 0;
+	justify-content: space-between;
+}
+
+
+.flexItem-blog-image{
+	min-width: 35%;
+}
+
+.flexItem-blog-image img{
+	max-width: 100%;
+}
+
+
+
+.flexItem-blog-body{
+	max-height: 100%;
+	min-width: 60%;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+
+
+.div-title-blog{
+	margin-left: 1%;
+}
+
+.flexItem-blog-body h3{
+	margin-bottom: 1%;
+	font-weight: 700 ;
+	font-size: 24px;
+}
+
+.flexItem-blog-body button{
+	font-size: 14px;
+	padding-left: 0;
+}
+
+.para-blog-post{
+	padding-top: 2%;
+	font-size: 18px;
+}
+
+
 
 
 /* ------------------- IDs ----------------------- */
@@ -364,6 +436,11 @@ hr{
 }
 
 
+@media all and ( max-width:  350px){
+	.flexItem-mini-hero{
+		min-height: 70vh;
+	}
+}
 
 
 
