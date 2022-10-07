@@ -412,7 +412,11 @@ input{
 	color: var(--white);
 	margin-top: 2%;
 	margin-bottom: 0.5%;
+}
 
+#btn-submit:hover{
+	background-color: var(--white);
+	color: var(--red);
 }
 
 
