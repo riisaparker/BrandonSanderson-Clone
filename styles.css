@@ -109,6 +109,19 @@ hr{
 
 
 
+/* ------- HEADER -------- */
+
+/* Logo */
+#fig-logo{
+	max-width: 60vh;
+	margin: auto;
+}
+
+
+
+
+
+
 /* ------- NAV BAR -------- */
 .navbar{
 	background-color: var(--black) ;
@@ -124,7 +137,6 @@ hr{
 	  border-radius: 0%;
 }
 
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	display: none;
@@ -132,7 +144,7 @@ hr{
 	background-color: var(--white);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  	z-index: 1;
+  z-index: 1;
 	font-style: var(--fontHeader);
 	font-size: 18px;
 	font-weight: 600;
@@ -178,9 +190,33 @@ hr{
 }
 
 
+#btn-newsletter{
+	background-color: var(--gold);
+	border-style: none;
+	border-radius: 25px;
+	color: var(--white);
+	font-size: 18px;
+	padding: 1% 1%;
+}
+
+
+
+/* ------- HERO -------- */
+
+/* Set the hero image */
+#fig-hero-large{
+	min-width: 100%;
+	max-width: 100%;
+}
+
+#fig-hero-small{
+	display: none;
+	margin: auto;
+}
+
+
 
 /* ------- MINI-HERO -------- */
-
 
 /* -- FLEXBOXES  */
 
@@ -195,7 +231,6 @@ hr{
 	justify-content: space-between;
 }
 
-
 .flexItem-mini-hero{
 	flex-basis: 32vw;
 	margin-top: 10px;
@@ -204,7 +239,7 @@ hr{
 }
 
 
-
+/* For content */
 .mini-hero-post{
 	margin: 0 0 0 5%;
   	position: absolute;
@@ -212,6 +247,19 @@ hr{
   	transform: translate(0, -50%);
 }
 
+
+/* Mini Heroes */
+#mini-hero-1{
+	background-color: var(--blue);
+}
+
+#mini-hero-2{
+	background-color: var(--gold);
+}
+
+#mini-hero-3{
+	background-color: var(--blue);
+}
 
 #mini-hero-1 h2, #mini-hero-3 h2{
 	color: var(--gold) ;
@@ -267,7 +315,7 @@ hr{
 	color: var(--gold);
 }
 
-
+/* Used for progress bars */
 #id-progress-1{
 	background: linear-gradient(to right, var(--gold) 100%, var(--gold) 100%, var(--darkBlue) 50%);
 }
@@ -282,6 +330,11 @@ hr{
 #id-progress-4{
 	background: linear-gradient(to right, var(--gold) 10%, var(--gold) 10%, var(--darkBlue) 10%);
 }
+
+
+
+
+
 
 
 
@@ -364,6 +417,7 @@ hr{
 #div-loadMore{
 	text-align: center;
 }
+
 
 
 /* -------  CALL TO ACTION -------- */
@@ -460,52 +514,6 @@ input{
 
 
 
-
-
-/* ------------------- IDs ----------------------- */
-
-/* Logo */
-#fig-logo{
-	max-width: 60vh;
-	margin: auto;
-}
-
-
-
-#btn-newsletter{
-	background-color: var(--gold);
-	border-style: none;
-	border-radius: 25px;
-	color: var(--white);
-	font-size: 18px;
-	padding: 1% 1%;
-}
-
-
-/* Set the hero image */
-#fig-hero-large{
-	min-width: 100%;
-	max-width: 100%;
-}
-
-#fig-hero-small{
-	display: none;
-	margin: auto;
-}
-
-
-/* Mini Heroes */
-#mini-hero-1{
-	background-color: var(--blue);
-}
-
-#mini-hero-2{
-	background-color: var(--gold);
-}
-
-#mini-hero-3{
-	background-color: var(--blue);
-}
 
 
 
